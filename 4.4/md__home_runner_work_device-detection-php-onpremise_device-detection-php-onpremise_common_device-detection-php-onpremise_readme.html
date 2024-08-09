@@ -11,6 +11,7 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="examplegrabber.js"></script>
+<script type="text/javascript" src="testedversionsgrabber.js"></script>
 <script type="text/javascript" src="search51.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -156,7 +157,7 @@ FiftyOneDegreesHashEngine.data_file=/<span style="background-color: #FFFF00">pat
 <h4>Apache MPM</h4>
 <p>When running under Apache MPM, only <code>prefork</code> mode is supported, since <code>dl()</code> call is required to load Device Detection engine module and it is not supported under multi-threading environment which <code>worker</code> and <code>event</code> mode does.</p>
 <h4>Refresh Internal Data</h4>
-<p>To reload the data file, <em>refreshData()</em> needs to be called as described in this <a href="http://51degrees.com/documentation/_examples__device_detection__data_file_updates__manual.html">example</a> . Thus, unless a reload is performed in the main process and all child processes, the data will not be updated. There is not a proven solution to do so yet, so we recommend a full server restart to be performed instead.</p>
+<p>To reload the data file, <em>refreshData()</em> needs to be called as described in this <a href="https://51degrees.com/documentation/_examples__device_detection__data_file_updates__manual.html">example</a> . Thus, unless a reload is performed in the main process and all child processes, the data will not be updated. There is not a proven solution to do so yet, so we recommend a full server restart to be performed instead.</p>
 <h2>Examples</h2>
 <p>Before running the examples, the configuration for the native module MUST be added to the php.ini file. See <a href="#configuration">Configuration</a>.</p>
 <p>To run the examples, you will need PHP and composer installed. Once these are available, install the dependencies required by the examples. Navigate to the repository root and execute:</p>
@@ -184,7 +185,7 @@ FiftyOneDegreesHashEngine.data_file=/<span style="background-color: #FFFF00">pat
 </div><h2>Tests</h2>
 <h3>PHPUnit</h3>
 <p>This repo has tests for the examples. To run the tests, make sure PHPUnit is installed then, in the root of this repo, call:</p>
-<div class="c-code__block c-code__block--outline"><div class="c-code__line">phpunit --log-junit test-results.xml</div></div><h3>Performance</h3>
+<div class="c-code__block c-code__block--outline"><div class="c-code__line">phpunit --fail-on-warning --display-warnings --log-junit test-results.xml</div></div><h3>Performance</h3>
 <p>Performance tests for the engine can be found in the <code>performance-tests</code> directory. To build this, the dependencies listed on <a href="https://github.com/51degrees/apachebench">ApacheBench</a> must be installed.</p>
 <p>To build the tests, enter the <code>performance-tests</code> directory and run the following.</p>
 <div class="c-code__block c-code__block--outline"><div class="c-code__line">mkdir build</div><div class="c-code__line">cd build</div><div class="c-code__line">cmake ..</div><div class="c-code__line">cmake --build .</div></div><p>Once the build is completed, ensure that the <code>php.ini</code> file is correctly configured, and run the tests from the build directory with:</p>

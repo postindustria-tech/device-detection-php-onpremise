@@ -36,12 +36,11 @@ var NAVTREEHIDESYNC = true;
 var NAVTREEINDEX =
 [
 "../../documentation/4.4/index.html",
-"class_config_device_detection_swig.html#acbcd792e9f405f2f8a504a1ad91b4465",
-"class_engine_base_swig.html#af57b2142b579eb06d9d0b91e83d1cb6b",
-"class_meta_data_swig.html#aa582c685d71d550eb65899698d4c117a",
-"class_results_base_swig.html#a96c83015873ba09b418d0eca8b1f8866",
-"class_vector_string_swig.html#aa3d7c3face0bebbe0b95e397ac0d2791",
-"classfiftyone_1_1pipeline_1_1core_1_1_set_header_element.html#a64b83982981b486145797bc17815676d"
+"class_config_hash_swig.html#a1bd81b8a1e9052eb5ab7cb9d6150edd5",
+"class_engine_device_detection_swig.html#a0d3ee454d5e57d607959b055066c84c8",
+"class_meta_data_swig.html#afe33781ffb4d3fd43c89c2a388548221",
+"class_results_device_detection_swig.html#a3def803715d2c81c30d8b052d8fc5223",
+"class_vector_string_values_swig.html#a0c709a1532d6e967cccdc8f945f6edb8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
